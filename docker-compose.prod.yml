@@ -1,0 +1,48 @@
+﻿services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: focuscomunicacion-web
+    ports:
+      - "8080:80"
+    depends_on:
+      - api
+
+  api:
+    image: node:22-alpine
+    container_name: focuscomunicacion-api-prod
+    working_dir: /app/server
+    command: sh -c "npm install --omit=dev && npm run start"
+    environment:
+      - PORT=3000
+      - CORS_ORIGIN=${CORS_ORIGIN:-https://focuscomunicacion.com}
+      - DATA_DIR=/app/server/data
+      - VISIT_DEBOUNCE_MS=${VISIT_DEBOUNCE_MS:-30000}
+      - PUBLIC_BASE_URL=${PUBLIC_BASE_URL:-https://focuscomunicacion.com}
+      - FRONTEND_SUCCESS_URL=${FRONTEND_SUCCESS_URL:-https://focuscomunicacion.com}
+      - API_PUBLIC_BASE_URL=${API_PUBLIC_BASE_URL:-https://focuscomunicacion.com}
+      - COURSE_PLAN_ID=${COURSE_PLAN_ID:-dale-reset-taller-redes}
+      - COURSE_PRICE_USD=${COURSE_PRICE_USD:-97}
+      - COURSE_DESCRIPTION=${COURSE_DESCRIPTION:-Taller Dale Reset - Sistema de ventas para redes sociales}
+      - DEUNA_PROVIDER=${DEUNA_PROVIDER:-manual}
+      - DEUNA_MODE=${DEUNA_MODE:-live}
+      - DEUNA_API_BASE_URL=${DEUNA_API_BASE_URL:-https://api.deuna.io}
+      - DEUNA_API_KEY=${DEUNA_API_KEY:-}
+      - DEUNA_STORE_CODE=${DEUNA_STORE_CODE:-all}
+      - DEUNA_STATIC_QR_IMAGE_URL=${DEUNA_STATIC_QR_IMAGE_URL:-}
+      - DEUNA_STATIC_DEEPLINK=${DEUNA_STATIC_DEEPLINK:-}
+      - DEUNA_WEBHOOK_SECRET=${DEUNA_WEBHOOK_SECRET:-}
+      - PAYPAL_MODE=${PAYPAL_MODE:-live}
+      - PAYPAL_CLIENT_ID=${PAYPAL_CLIENT_ID:-}
+      - PAYPAL_CLIENT_SECRET=${PAYPAL_CLIENT_SECRET:-}
+      - PAYPAL_BRAND_NAME=${PAYPAL_BRAND_NAME:-DaleReset}
+      - PAYPAL_WEBHOOK_SECRET=${PAYPAL_WEBHOOK_SECRET:-}
+    volumes:
+      - .:/app
+      - api_node_modules_prod:/app/server/node_modules
+      - api_data_prod:/app/server/data
+
+volumes:
+  api_node_modules_prod:
+  api_data_prod:

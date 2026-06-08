@@ -1,0 +1,15 @@
+{
+  "name": "Dale Reset Masterclass",
+  "short_name": "Dale Reset",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#d12d5b",
+  "icons": [
+    {
+      "src": "/assets/images/focus-mark.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}
