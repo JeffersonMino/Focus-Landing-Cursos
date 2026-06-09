@@ -32,7 +32,7 @@ import { TrailerSectionComponent } from './components/trailer-section/trailer-se
     TestimonialsSectionComponent,
     // PortfolioSectionComponent,
     AudienceFitSectionComponent,
-    PaymentSectionComponent,
+    //PaymentSectionComponent,
     CtaSectionComponent,
     // FaqSectionComponent,
     // RegistrationSectionComponent,
@@ -122,9 +122,9 @@ import { TrailerSectionComponent } from './components/trailer-section/trailer-se
           <!-- <payments-unlocked>
             <purpose>Checkout real. Se mantiene dentro del contenido bloqueado para activarse solo al completar el video.</purpose>
           </payments-unlocked> -->
-          @if (config.sections.showPayments) {
+          <!-- @if (config.sections.showPayments) {
             <focus-payment-section />
-          }
+          } -->
 
           @if (config.sections.showMainCta) {
             <focus-cta-section [unlocked]="unlocked()" />
