@@ -59,7 +59,7 @@ export type HeroNavigationTarget =
             (click)="navigate.emit({ kind: 'whatsapp' })"
           >
             <img class="h-4 w-4" [src]="config.whatsapp.iconUrl" alt="" loading="lazy" decoding="async">
-            WhatsApp
+            Ingresar al grupo
           </button>
         </nav>
       </header>
@@ -83,7 +83,7 @@ export type HeroNavigationTarget =
             </button>
             <button
               type="button"
-              class="focus-button focus-button-secondary w-full px-4 text-xs tracking-[0.14em] sm:w-auto sm:px-5 sm:text-sm sm:tracking-[0.18em]"
+              class="focus-button focus-button-primary w-full px-4 text-xs tracking-[0.14em] sm:w-auto sm:px-5 sm:text-sm sm:tracking-[0.18em]"
               [disabled]="!unlocked()"
               (click)="navigate.emit({ kind: 'whatsapp' })"
             >

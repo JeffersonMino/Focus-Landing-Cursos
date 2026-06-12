@@ -7,18 +7,17 @@ import { VideoGateService } from '@core/services/video-gate.service';
   standalone: true,
   template: `
     <a
-      class="fixed bottom-5 right-5 z-50 grid h-14 w-14 place-items-center rounded-[8px] border border-white/12 bg-white text-black shadow-2xl shadow-black/40 transition duration-300 hover:-translate-y-1 hover:bg-focus-orange focus-visible:outline-focus-orange"
-      [class.opacity-45]="!unlocked()"
-      [class.pointer-events-none]="false"
+      class="focus-button focus-button-primary fixed inset-x-4 bottom-4 z-[90] min-h-14 w-auto px-4 text-xs shadow-2xl shadow-black/45 sm:inset-x-6 sm:px-5 sm:text-sm lg:inset-x-8"
+      [class.opacity-85]="!unlocked()"
       [href]="href()"
       target="_blank"
       rel="noopener noreferrer"
       [attr.aria-disabled]="!unlocked()"
-      [attr.title]="unlocked() ? 'Abrir WhatsApp' : 'Completa el video para desbloquear WhatsApp'"
+      [attr.title]="unlocked() ? 'Ingresar al grupo' : 'Completa el video para registrarte'"
       (click)="handleClick($event)"
     >
-      <span class="sr-only">WhatsApp</span>
-      <img class="h-7 w-7" [src]="whatsapp.iconUrl" alt="" loading="lazy" decoding="async">
+      <img class="h-5 w-5 shrink-0" [src]="whatsapp.iconUrl" alt="" loading="lazy" decoding="async">
+      <span>{{ label() }}</span>
     </a>
   `,
   changeDetection: ChangeDetectionStrategy.OnPush
@@ -28,6 +27,7 @@ export class WhatsappButtonComponent {
   readonly whatsapp = LANDING_CONFIG.whatsapp;
   readonly unlocked = this.gate.isCompleted(LANDING_CONFIG.videoGate.id);
   readonly href = computed(() => (this.unlocked() ? this.whatsappHref() : '#trailer'));
+  readonly label = computed(() => (this.unlocked() ? 'Ingresar al grupo' : 'Registrarse'));
 
   handleClick(event: MouseEvent): void {
     if (this.unlocked()) {

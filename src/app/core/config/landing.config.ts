@@ -252,24 +252,24 @@ export const LANDING_CONFIG: LandingConfig = {
       title: 'Lanzamiento de marca',
       category: 'Commercial film',
       image: {
-        src: 'https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?auto=format&fit=crop&w=900&q=80',
-        alt: 'Director revisando una escena con camara profesional'
+        src: '/assets/images/DALERESET.png',
+        alt: 'Imagen local del taller Dale Reset usada como pieza de portfolio'
       }
     },
     {
       title: 'Evento inmersivo',
       category: 'Live experience',
       image: {
-        src: 'https://images.unsplash.com/photo-1505373877841-8d25f7d46678?auto=format&fit=crop&w=900&q=80',
-        alt: 'Escenario de evento con luces cinematograficas'
+        src: '/assets/images/DALERESET.png',
+        alt: 'Arte visual Dale Reset para mostrar una experiencia audiovisual'
       }
     },
     {
       title: 'Contenido premium',
       category: 'Social storytelling',
       image: {
-        src: 'https://images.unsplash.com/photo-1485846234645-a62644f84728?auto=format&fit=crop&w=900&q=80',
-        alt: 'Equipo grabando una escena para contenido audiovisual'
+        src: '/assets/images/DALERESET.png',
+        alt: 'Imagen local Dale Reset para contenido premium del curso'
       }
     }
   ],

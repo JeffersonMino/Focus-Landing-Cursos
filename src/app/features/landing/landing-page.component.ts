@@ -30,7 +30,7 @@ import { TrailerSectionComponent } from './components/trailer-section/trailer-se
     // AboutSectionComponent,
     // BenefitsSectionComponent,
     TestimonialsSectionComponent,
-    // PortfolioSectionComponent,
+    PortfolioSectionComponent,
     AudienceFitSectionComponent,
     //PaymentSectionComponent,
     CtaSectionComponent,
@@ -101,11 +101,11 @@ import { TrailerSectionComponent } from './components/trailer-section/trailer-se
 
           @if (config.sections.showBenefits) {
             <focus-benefits-section />
-          }
+          }-->
 
           @if (config.sections.showPortfolio) {
             <focus-portfolio-section />
-          }-->
+          } 
 
           @if (config.sections.showTestimonials) {
             <focus-testimonials-section />

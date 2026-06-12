@@ -31,7 +31,7 @@ import { RevealOnScrollDirective } from '@shared/directives/reveal-on-scroll.dir
             rel="noopener noreferrer"
           >
             <img class="h-8 w-8 shrink-0" [src]="whatsapp.iconUrl" alt="" loading="lazy" decoding="async">
-            <span>Ir a WhatsApp</span>
+            <span>Ingresar al grupo</span>
           </a>
         </div>
       </div>

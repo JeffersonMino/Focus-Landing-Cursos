@@ -47,7 +47,7 @@ import { VideoGateService } from '@core/services/video-gate.service';
             </div>
           }
 
-          <div class="pointer-events-none absolute inset-0" aria-hidden="true">
+          <div class="absolute inset-0">
             <div [id]="playerElementId" class="h-full w-full"></div>
           </div>
 
@@ -99,16 +99,16 @@ import { VideoGateService } from '@core/services/video-gate.service';
             }
 
             <div class="grid grid-cols-1 gap-3 sm:grid-cols-3">
-              <button type="button" class="focus-button focus-button-secondary" [disabled]="!ready()" (click)="togglePlayback()">
+              <button type="button" class="focus-button focus-button-primary min-w-0 whitespace-normal px-3 text-xs sm:text-[0.68rem] lg:text-xs" [disabled]="!ready()" (click)="togglePlayback()">
                 {{ playing() ? 'Pausar' : 'Reproducir' }}
               </button>
-              <button type="button" class="focus-button focus-button-secondary" (click)="toggleMute()">
+              <button type="button" class="focus-button focus-button-primary min-w-0 whitespace-normal px-3 text-xs sm:text-[0.68rem] lg:text-xs" (click)="toggleMute()">
                 {{ muted() ? 'Activar sonido' : 'Silenciar' }}
               </button>
               <!-- <restart-button>
                 <purpose>Reinicia el video. Antes de completar bloquea de nuevo; despues de completar solo repite el video.</purpose>
               </restart-button> -->
-              <button type="button" class="focus-button focus-button-secondary" [disabled]="!ready()" (click)="replayFromStart()">
+              <button type="button" class="focus-button focus-button-primary min-w-0 whitespace-normal px-3 text-xs sm:text-[0.68rem] lg:text-xs" [disabled]="!ready()" (click)="replayFromStart()">
                 Reiniciar
               </button>
             </div>
