@@ -12,7 +12,7 @@ import { VideoGateComponent } from '@shared/components/video-gate/video-gate.com
       <div class="mb-10 grid gap-8 lg:grid-cols-[0.8fr_1.2fr] lg:items-end" focusReveal>
         <div>
           <p class="focus-eyebrow">Trailer obligatorio</p>
-          <h2 class="mt-4 focus-heading">Primero mira. Luego aplica.</h2>
+          <!-- <h2 class="mt-4 focus-heading">Filmmaking con estrategia, estetica y conversion.</h2> -->
         </div>
         <p class="focus-copy max-w-2xl lg:justify-self-end">
           Sistema de Ventas:

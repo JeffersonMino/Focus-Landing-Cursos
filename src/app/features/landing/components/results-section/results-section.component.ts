@@ -18,7 +18,7 @@ import { RevealOnScrollDirective } from '@shared/directives/reveal-on-scroll.dir
           <p class="focus-eyebrow justify-center">{{ results.eyebrow }}</p>
           <h2 class="mt-4 focus-heading">{{ results.title }}</h2>
           <p class="mx-auto mt-5 max-w-2xl text-base leading-7 text-white/68 sm:text-lg">
-            Estos son los resultados de uno de nuestros clientes del sector de la salud en Quito.
+            Estos son los resultados de nuestro clientes del sector de la salud en Quito que va un año implementando este sistema.
           </p>
         </div>
 

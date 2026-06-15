@@ -8,7 +8,7 @@ export const LANDING_CONFIG: LandingConfig = {
    */
   brand: {
     name: 'DaleReset',
-    slogan: 'Filmmaking con estrategia, estetica y conversion.',
+    slogan: 'Lideres - Empresarios - Emprendedores',
     logoText: 'Dale Reset un producto de Focus Agencia',
     logoUrl: 'assets/images/Icon focus.png'
   },
@@ -177,7 +177,7 @@ export const LANDING_CONFIG: LandingConfig = {
    * </audience-fit>
    */
   audienceFit: {
-    forTitle: 'ESTE TALLER ES PARA TI, SI:',
+    forTitle: 'ES PARA TI, SI:',
     notForTitle: 'NO ES PARA TI, SI:',
     forItems: [
       {
@@ -390,7 +390,7 @@ export const LANDING_CONFIG: LandingConfig = {
       {
         icon: 'marketing',
         title: 'Seguimiento y',
-        accent: 'Marketing'
+        accent: 'ReMarketing'
       }
     ],
     statementLead: 'Estos resultados aparecen cuando se conectan',
@@ -400,7 +400,7 @@ export const LANDING_CONFIG: LandingConfig = {
       'contenido de valor',
       'canales adecuados',
       'ventas por CRM o WhatsApp',
-      'seguimiento y marketing'
+      'seguimiento y Remarketing'
     ],
     closingLead: 'Los numeros',
     closingAccent: 'hablan por si solos.'

@@ -18,7 +18,12 @@ interface SummaryPart {
         <purpose>Seccion desbloqueada despues del video. Explica para quien si/no es el taller.</purpose>
         <edit>Los textos e iconos se editan en LANDING_CONFIG.audienceFit.</edit>
       </audience-fit-section> -->
+
       <div class="focus-container" focusReveal>
+          <div class="mb-12 max-w-3xl" focusReveal>
+            <!-- <p class="focus-eyebrow">Testimonios</p> -->
+            <h2 class="mt-4 focus-heading">Este taller es para ti.</h2>
+          </div>
         <div class="grid gap-5 lg:grid-cols-2">
           <article class="rounded-[8px] border border-focus-orange/28 bg-[#1f0711]/86 p-5 shadow-xl shadow-black/30 backdrop-blur sm:p-7">
             <header class="mb-2 flex items-center gap-3">
