@@ -25,6 +25,7 @@ export const LANDING_CONFIG: LandingConfig = {
     showTestimonials: true,
     showPortfolio: true,
     showAudienceFit: true,
+    showResults: true,
     showPayments: true,
     showMainCta: true,
     showFAQ: true,
@@ -71,7 +72,7 @@ export const LANDING_CONFIG: LandingConfig = {
     kicker: 'Lideres - Empresarios - Emprendedores',
     title: 'TALLER - SISTEMAS DE VENTAS PARA REDES SOCIALES.',
     subtitle:
-      'Este taller es para duenos de negocios, emprendedores y equipos que quieren generar resultados en redes sociales',
+      'Aprende un sistema de ventas para redes sociales que ya está generando resultados reales. Este no es un taller basado en teoría, sino en experiencias, estrategias y casos de éxito aplicados con clientes que hoy venden más gracias a un proceso comercial estructurado.',
     primaryCta: 'Ver trailer obligatorio',
     secondaryCta: 'Entrar al grupo',
     background: {
@@ -230,49 +231,167 @@ export const LANDING_CONFIG: LandingConfig = {
   testimonials: [
     {
       quote:
-        'La clase aterriza la estetica cinematografica en procesos que puedes vender. Salimos con una ruta clara para producir mejor.',
-      name: 'Andrea Mora',
-      role: 'Productora audiovisual'
+        'Excelente taller 😍😍🙌🙌 gracias por todo lo aprendido',
+      name: 'Cinthia Luna',
+      role: 'Directora Tumbado - Dance Academy'
     },
     {
       quote:
-        'Me ayudo a mirar mis videos como piezas de negocio, no solo como planos bonitos. El cambio se nota en cada propuesta.',
-      name: 'Mateo Rivas',
-      role: 'Director de contenido'
-    },
-    {
-      quote:
-        'La experiencia se siente premium desde el primer minuto. Es tecnica, pero tambien muy enfocada en criterio visual.',
-      name: 'Camila Torres',
-      role: 'Filmmaker freelance'
+        'Excelente taller!! Muchas gracias chicos todo súper interesante, sigan adelante!! 👌.',
+      name: 'Veronica Santos',
+      role: 'Jefa de marketing - Vive Medical valle'
     }
+
   ],
   portfolio: [
     {
-      title: 'Lanzamiento de marca',
-      category: 'Commercial film',
+      title: 'Participantes trabajando en sus ejercicios',
+      category: 'Taller presencial',
       image: {
-        src: '/assets/images/DALERESET.png',
-        alt: 'Imagen local del taller Dale Reset usada como pieza de portfolio'
+        src: '/assets/images/taller1/f1.jpeg',
+        alt: 'Participantes del taller Dale Reset en una sesion practica'
       }
     },
     {
-      title: 'Evento inmersivo',
-      category: 'Live experience',
+      title: 'Aprendizaje aplicado',
+      category: 'Ejercicios guiados',
       image: {
-        src: '/assets/images/DALERESET.png',
-        alt: 'Arte visual Dale Reset para mostrar una experiencia audiovisual'
+        src: '/assets/images/taller1/f2.jpeg',
+        alt: 'Asistentes aplicando estrategias comerciales en el taller'
       }
     },
     {
-      title: 'Contenido premium',
-      category: 'Social storytelling',
+      title: 'Estrategia en accion',
+      category: 'Sistema comercial',
       image: {
-        src: '/assets/images/DALERESET.png',
-        alt: 'Imagen local Dale Reset para contenido premium del curso'
+        src: '/assets/images/taller1/f3.jpeg',
+        alt: 'Momento de trabajo estrategico durante el taller Dale Reset'
+      }
+    },
+    {
+      title: 'Proceso comercial',
+      category: 'CRM y ventas',
+      image: {
+        src: '/assets/images/taller1/f4.jpeg',
+        alt: 'Participantes organizando su proceso comercial en el taller'
+      }
+    },
+    {
+      title: 'Trabajo practico',
+      category: 'Implementacion',
+      image: {
+        src: '/assets/images/taller1/f5.jpeg',
+        alt: 'Trabajo practico guiado en el taller de ventas para redes sociales'
+      }
+    },
+    {
+      title: 'Casos reales',
+      category: 'Negocio',
+      image: {
+        src: '/assets/images/taller1/f6.jpeg',
+        alt: 'Sesion de casos reales para negocios y emprendedores'
+      }
+    },
+    {
+      title: 'Herramientas para crecer',
+      category: 'Crecimiento',
+      image: {
+        src: '/assets/images/taller1/f7.jpeg',
+        alt: 'Herramientas de crecimiento comercial aplicadas en clase'
+      }
+    },
+    {
+      title: 'Seguimiento constante',
+      category: 'Ventas',
+      image: {
+        src: '/assets/images/taller1/f8.jpeg',
+        alt: 'Participantes aprendiendo seguimiento comercial constante'
+      }
+    },
+    {
+      title: 'Decisiones comerciales',
+      category: 'Estrategia clara',
+      image: {
+        src: '/assets/images/taller1/f9.jpeg',
+        alt: 'Estrategia comercial clara explicada en el taller Dale Reset'
+      }
+    },
+    {
+      title: 'Contenido de valor',
+      category: 'Redes sociales',
+      image: {
+        src: '/assets/images/taller1/f10.jpeg',
+        alt: 'Contenido de valor aplicado a ventas en redes sociales'
+      }
+    },
+    {
+      title: 'Resultados desde la experiencia',
+      category: 'Dale Reset',
+      image: {
+        src: '/assets/images/taller1/f11.jpeg',
+        alt: 'Resultados y aprendizaje desde la experiencia del taller'
       }
     }
   ],
+  /**
+   * <results>
+   *   <purpose>Datos de la seccion de resultados: numeros, pilares comerciales y cierre visual.</purpose>
+   *   <edit>Actualiza metricas o textos aqui sin tocar el componente.</edit>
+   * </results>
+   */
+  results: {
+    eyebrow: 'Resultados comprobados',
+    title: 'Los numeros hablan por si solos.',
+    metrics: [
+      {
+        value: '150.000',
+        label: 'leads gestionados',
+        tone: 'blue'
+      },
+      {
+        value: '13.800',
+        label: 'citas agendadas',
+        tone: 'green'
+      },
+      {
+        value: 'USD 6',
+        label: 'millones',
+        detail: 'en oportunidades de consulta',
+        tone: 'orange'
+      }
+    ],
+    pillars: [
+      {
+        icon: 'content',
+        title: 'Contenido',
+        accent: 'de valor'
+      },
+      {
+        icon: 'follow',
+        title: 'Seguimiento',
+        accent: 'constante'
+      },
+      {
+        icon: 'checklist',
+        title: 'Organizacion',
+        accent: 'comercial'
+      },
+      {
+        icon: 'target',
+        title: 'Estrategia',
+        accent: 'clara'
+      }
+    ],
+    statementLead: 'Estos resultados son posibles cuando se combinan',
+    highlightedWords: [
+      'contenido de valor',
+      'seguimiento constante',
+      'organizacion comercial',
+      'estrategia clara'
+    ],
+    closingLead: 'Los numeros',
+    closingAccent: 'hablan por si solos.'
+  },
   faq: [
     {
       question: 'El video realmente es obligatorio?',

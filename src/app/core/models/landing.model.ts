@@ -6,6 +6,7 @@
   | 'showTestimonials'
   | 'showPortfolio'
   | 'showAudienceFit'
+  | 'showResults'
   | 'showPayments'
   | 'showMainCta'
   | 'showFAQ'
@@ -130,6 +131,34 @@ export interface PortfolioItem {
   image: ImageAsset;
 }
 
+export type ResultsMetricTone = 'blue' | 'green' | 'orange';
+
+export interface ResultsMetric {
+  value: string;
+  label: string;
+  detail?: string;
+  tone: ResultsMetricTone;
+}
+
+export type ResultsPillarIcon = 'content' | 'follow' | 'checklist' | 'target';
+
+export interface ResultsPillar {
+  icon: ResultsPillarIcon;
+  title: string;
+  accent: string;
+}
+
+export interface ResultsConfig {
+  eyebrow: string;
+  title: string;
+  metrics: ResultsMetric[];
+  pillars: ResultsPillar[];
+  statementLead: string;
+  highlightedWords: string[];
+  closingLead: string;
+  closingAccent: string;
+}
+
 export interface LandingConfig {
   brand: {
     name: string;
@@ -154,5 +183,6 @@ export interface LandingConfig {
   audienceFit: AudienceFitConfig;
   testimonials: Testimonial[];
   portfolio: PortfolioItem[];
+  results: ResultsConfig;
   faq: FAQItem[];
 }

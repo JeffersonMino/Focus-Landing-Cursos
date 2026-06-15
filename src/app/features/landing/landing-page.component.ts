@@ -18,6 +18,7 @@ import { HeroSectionComponent, HeroNavigationTarget } from './components/hero-se
 import { PaymentSectionComponent } from './components/payment-section/payment-section.component';
 import { PortfolioSectionComponent } from './components/portfolio-section/portfolio-section.component';
 import { RegistrationSectionComponent } from './components/registration-section/registration-section.component';
+import { ResultsSectionComponent } from './components/results-section/results-section.component';
 import { TestimonialsSectionComponent } from './components/testimonials-section/testimonials-section.component';
 import { TrailerSectionComponent } from './components/trailer-section/trailer-section.component';
 
@@ -31,6 +32,7 @@ import { TrailerSectionComponent } from './components/trailer-section/trailer-se
     // BenefitsSectionComponent,
     TestimonialsSectionComponent,
     PortfolioSectionComponent,
+    ResultsSectionComponent,
     AudienceFitSectionComponent,
     //PaymentSectionComponent,
     CtaSectionComponent,
@@ -95,6 +97,9 @@ import { TrailerSectionComponent } from './components/trailer-section/trailer-se
           [class.pointer-events-none]="!unlocked()"
           [attr.aria-hidden]="!unlocked()"
         >
+         @if (config.sections.showAudienceFit) {
+            <focus-audience-fit-section />
+          }
           <!-- @if (config.sections.showAbout) {
             <focus-about-section />
           }
@@ -107,6 +112,10 @@ import { TrailerSectionComponent } from './components/trailer-section/trailer-se
             <focus-portfolio-section />
           } 
 
+          @if (config.sections.showResults) {
+            <focus-results-section />
+          }
+
           @if (config.sections.showTestimonials) {
             <focus-testimonials-section />
           } 
@@ -114,9 +123,7 @@ import { TrailerSectionComponent } from './components/trailer-section/trailer-se
           <!-- <audience-fit-unlocked>
             <purpose>Seccion "Es para ti / No es para ti"; aparece dentro del contenido bloqueado hasta completar el video.</purpose>
           </audience-fit-unlocked> -->
-          @if (config.sections.showAudienceFit) {
-            <focus-audience-fit-section />
-          }
+         
 
           
           <!-- <payments-unlocked>
@@ -204,5 +211,4 @@ export class LandingPageComponent implements OnInit {
     return `${this.config.whatsapp.groupUrl}${separator}text=${encodeURIComponent(this.config.whatsapp.message)}`;
   }
 }
-
 

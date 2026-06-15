@@ -20,11 +20,18 @@ import { RevealOnScrollDirective } from '@shared/directives/reveal-on-scroll.dir
       <div class="focus-container">
         <div class="mb-10 grid gap-6 lg:grid-cols-[0.9fr_1.1fr] lg:items-end" focusReveal>
           <div>
-            <p class="focus-eyebrow">Portafolio filmmaker</p>
-            <h2 class="mt-4 focus-heading">Imagenes que venden una sensacion.</h2>
+            <p class="focus-eyebrow">Portafolio del Taller</p>
+            <h2 class="mt-4 focus-heading">Primer taller.</h2>
           </div>
           <p class="focus-copy">
-            Slider visual con material local del taller, frames de campanas, detras de camaras o piezas del cliente.
+              Aprende haciendo
+              CRM y cierre de ventas
+              Estrategias que funcionan
+              Organiza tu proceso comercial
+              Trabajo práctico guiado
+              Herramientas para crecer
+              Casos reales de negocio
+              Resultados desde la experiencia.
           </p>
         </div>
 
