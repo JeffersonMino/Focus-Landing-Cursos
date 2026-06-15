@@ -35,6 +35,27 @@ docker compose up --build
 npm run build:prod
 ```
 
+## Publicar en GitHub Pages
+
+Este proyecto se publica bajo el subdirectorio del repositorio:
+
+```text
+https://jeffersonmino.github.io/Focus-Landing-Cursos/
+```
+
+Usa estos scripts para que Angular genere el `base href` correcto y las imagenes locales se resuelvan como `assets/...` dentro del repositorio:
+
+```bash
+npm run build:ghpages
+npm run deploy:ghpages
+```
+
+No cambies las imagenes locales a rutas con `/assets/...`; en GitHub Pages eso apunta al dominio raiz y rompe las imagenes. Usa siempre rutas relativas como:
+
+```ts
+src: 'assets/images/taller1/f1.jpeg'
+```
+
 Preview productivo con Nginx:
 
 ```bash

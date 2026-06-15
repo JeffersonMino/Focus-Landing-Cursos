@@ -76,7 +76,7 @@ export const LANDING_CONFIG: LandingConfig = {
     primaryCta: 'Ver trailer obligatorio',
     secondaryCta: 'Entrar al grupo',
     background: {
-      src: '/assets/images/DALERESET.png',
+      src: 'assets/images/DALERESET.png',
       alt: 'Arte visual Dale Reset con microfono de podcast en estudio oscuro'
     }
   },
@@ -248,7 +248,7 @@ export const LANDING_CONFIG: LandingConfig = {
       title: 'Participantes trabajando en sus ejercicios',
       category: 'Taller presencial',
       image: {
-        src: '/assets/images/taller1/f1.jpeg',
+        src: 'assets/images/taller1/f1.jpeg',
         alt: 'Participantes del taller Dale Reset en una sesion practica'
       }
     },
@@ -256,7 +256,7 @@ export const LANDING_CONFIG: LandingConfig = {
       title: 'Aprendizaje aplicado',
       category: 'Ejercicios guiados',
       image: {
-        src: '/assets/images/taller1/f2.jpeg',
+        src: 'assets/images/taller1/f2.jpeg',
         alt: 'Asistentes aplicando estrategias comerciales en el taller'
       }
     },
@@ -264,7 +264,7 @@ export const LANDING_CONFIG: LandingConfig = {
       title: 'Estrategia en accion',
       category: 'Sistema comercial',
       image: {
-        src: '/assets/images/taller1/f3.jpeg',
+        src: 'assets/images/taller1/f3.jpeg',
         alt: 'Momento de trabajo estrategico durante el taller Dale Reset'
       }
     },
@@ -272,7 +272,7 @@ export const LANDING_CONFIG: LandingConfig = {
       title: 'Proceso comercial',
       category: 'CRM y ventas',
       image: {
-        src: '/assets/images/taller1/f4.jpeg',
+        src: 'assets/images/taller1/f4.jpeg',
         alt: 'Participantes organizando su proceso comercial en el taller'
       }
     },
@@ -280,7 +280,7 @@ export const LANDING_CONFIG: LandingConfig = {
       title: 'Trabajo practico',
       category: 'Implementacion',
       image: {
-        src: '/assets/images/taller1/f5.jpeg',
+        src: 'assets/images/taller1/f5.jpeg',
         alt: 'Trabajo practico guiado en el taller de ventas para redes sociales'
       }
     },
@@ -288,7 +288,7 @@ export const LANDING_CONFIG: LandingConfig = {
       title: 'Casos reales',
       category: 'Negocio',
       image: {
-        src: '/assets/images/taller1/f6.jpeg',
+        src: 'assets/images/taller1/f6.jpeg',
         alt: 'Sesion de casos reales para negocios y emprendedores'
       }
     },
@@ -296,7 +296,7 @@ export const LANDING_CONFIG: LandingConfig = {
       title: 'Herramientas para crecer',
       category: 'Crecimiento',
       image: {
-        src: '/assets/images/taller1/f7.jpeg',
+        src: 'assets/images/taller1/f7.jpeg',
         alt: 'Herramientas de crecimiento comercial aplicadas en clase'
       }
     },
@@ -304,7 +304,7 @@ export const LANDING_CONFIG: LandingConfig = {
       title: 'Seguimiento constante',
       category: 'Ventas',
       image: {
-        src: '/assets/images/taller1/f8.jpeg',
+        src: 'assets/images/taller1/f8.jpeg',
         alt: 'Participantes aprendiendo seguimiento comercial constante'
       }
     },
@@ -312,7 +312,7 @@ export const LANDING_CONFIG: LandingConfig = {
       title: 'Decisiones comerciales',
       category: 'Estrategia clara',
       image: {
-        src: '/assets/images/taller1/f9.jpeg',
+        src: 'assets/images/taller1/f9.jpeg',
         alt: 'Estrategia comercial clara explicada en el taller Dale Reset'
       }
     },
@@ -320,7 +320,7 @@ export const LANDING_CONFIG: LandingConfig = {
       title: 'Contenido de valor',
       category: 'Redes sociales',
       image: {
-        src: '/assets/images/taller1/f10.jpeg',
+        src: 'assets/images/taller1/f10.jpeg',
         alt: 'Contenido de valor aplicado a ventas en redes sociales'
       }
     },
@@ -328,7 +328,7 @@ export const LANDING_CONFIG: LandingConfig = {
       title: 'Resultados desde la experiencia',
       category: 'Dale Reset',
       image: {
-        src: '/assets/images/taller1/f11.jpeg',
+        src: 'assets/images/taller1/f11.jpeg',
         alt: 'Resultados y aprendizaje desde la experiencia del taller'
       }
     }
