@@ -25,13 +25,13 @@ import { RevealOnScrollDirective } from '@shared/directives/reveal-on-scroll.dir
           </div>
           <p class="focus-copy">
               Aprende haciendo
-              CRM y cierre de ventas
-              Estrategias que funcionan
-              Organiza tu proceso comercial
-              Trabajo práctico guiado
-              Herramientas para crecer
-              Casos reales de negocio
-              Resultados desde la experiencia.
+                CRM y cierre de ventas
+                Estrategias que funcionan
+                Organiza tu proceso comercial
+                Trabajo práctico guiado
+                Herramientas para crecer
+                Casos reales de negocio
+                Resultados desde la experiencia
           </p>
         </div>
 
@@ -65,9 +65,9 @@ import { RevealOnScrollDirective } from '@shared/directives/reveal-on-scroll.dir
                 <h3 class="mt-3 max-w-3xl font-display text-3xl font-semibold leading-tight text-white sm:text-5xl">
                   {{ activeItem().title }}
                 </h3>
-                <p class="mt-4 max-w-xl text-sm leading-6 text-white/72">
+                <!-- <p class="mt-4 max-w-xl text-sm leading-6 text-white/72">
                   Presiona la imagen para verla en grande sin salir de la experiencia.
-                </p>
+                </p> -->
               </div>
             </button>
 

@@ -28,10 +28,19 @@ export type HeroNavigationTarget =
         <!-- <brand-mark>
           <purpose>Marca visible de la landing. El texto viene de LANDING_CONFIG.brand.logoText.</purpose>
         </brand-mark> -->
-        <a class="group inline-flex items-center gap-3" href="/" aria-label="FocusComunicacion inicio">
-          <span class="grid h-10 w-10 place-items-center rounded-[8px] bg-focus-orange text-lg font-black text-white">R</span>
-          <span>
-            <span class="block text-sm font-black uppercase tracking-[0.22em] text-white">{{ config.brand.logoText }}</span>
+        <a class="group inline-flex min-w-0 items-center gap-3" href="./" aria-label="FocusComunicacion inicio">
+          <!-- <span class="grid h-10 w-10 place-items-center rounded-[8px] bg-focus-orange text-lg font-black text-white">R</span> -->
+          <span class="flex h-15 w-15 shrink-0 items-center justify-center overflow-hidden rounded-[8px] ">            
+            <img
+              [src]="config.brand.logoUrl"
+              alt="Focus Agencia"
+              class="h-15 w-15 object-contain"
+              fetchpriority="high"
+              decoding="async"
+            >
+          </span>
+          <span class="min-w-0">
+            <span class="block max-w-[13rem] truncate text-xs font-black uppercase tracking-[0.18em] text-white sm:max-w-none sm:text-sm sm:tracking-[0.22em]">{{ config.brand.logoText }}</span>
             <span class="block text-[10px] uppercase tracking-[0.22em] text-white/42"></span>
           </span>
         </a>

@@ -9,7 +9,8 @@ export const LANDING_CONFIG: LandingConfig = {
   brand: {
     name: 'DaleReset',
     slogan: 'Filmmaking con estrategia, estetica y conversion.',
-    logoText: 'Dale-Reset'
+    logoText: 'Dale Reset un producto de Focus Agencia',
+    logoUrl: 'assets/images/Icon focus.png'
   },
   /**
    * <sections>
@@ -58,7 +59,7 @@ export const LANDING_CONFIG: LandingConfig = {
    * </whatsapp>
    */
   whatsapp: {
-    groupUrl: 'https://chat.whatsapp.com/+593992539251',
+    groupUrl: 'https://chat.whatsapp.com/EpqQS9J1iePE1uTg7dYPyM?s=cl&p=a&mlu=1',
     iconUrl: 'https://cdn.simpleicons.org/whatsapp/25D366',
     message: 'Hola, quiero mas informacion sobre el curso de DaleReset'
   },
@@ -176,7 +177,7 @@ export const LANDING_CONFIG: LandingConfig = {
    * </audience-fit>
    */
   audienceFit: {
-    forTitle: 'ES PARA TI, SI:',
+    forTitle: 'ESTE TALLER ES PARA TI, SI:',
     notForTitle: 'NO ES PARA TI, SI:',
     forItems: [
       {
@@ -293,7 +294,7 @@ export const LANDING_CONFIG: LandingConfig = {
       }
     },
     {
-      title: 'Herramientas para crecer',
+      title: 'Participacion activa',
       category: 'Crecimiento',
       image: {
         src: 'assets/images/taller1/f7.jpeg',
@@ -341,7 +342,7 @@ export const LANDING_CONFIG: LandingConfig = {
    */
   results: {
     eyebrow: 'Resultados comprobados',
-    title: 'Los numeros hablan por si solos.',
+    title: 'Caso de éxito',
     metrics: [
       {
         value: '150.000',
@@ -361,33 +362,45 @@ export const LANDING_CONFIG: LandingConfig = {
       }
     ],
     pillars: [
+      // {
+      //   icon: 'system',
+      //   title: 'Nuestro',
+      //   accent: 'Sistema'
+      // },
+      {
+        icon: 'strategy',
+        title: 'Estrategia',
+        accent: 'clara'
+      },
       {
         icon: 'content',
         title: 'Contenido',
         accent: 'de valor'
       },
       {
-        icon: 'follow',
-        title: 'Seguimiento',
-        accent: 'constante'
+        icon: 'channels',
+        title: 'Canales',
+        accent: 'Adecuados'
       },
       {
-        icon: 'checklist',
-        title: 'Organizacion',
-        accent: 'comercial'
+        icon: 'crm',
+        title: 'Ventas CRM o',
+        accent: 'Whatsapp'
       },
       {
-        icon: 'target',
-        title: 'Estrategia',
-        accent: 'clara'
+        icon: 'marketing',
+        title: 'Seguimiento y',
+        accent: 'Marketing'
       }
     ],
-    statementLead: 'Estos resultados son posibles cuando se combinan',
+    statementLead: 'Estos resultados aparecen cuando se conectan',
     highlightedWords: [
+      'nuestro sistema',
+      'estrategia clara',
       'contenido de valor',
-      'seguimiento constante',
-      'organizacion comercial',
-      'estrategia clara'
+      'canales adecuados',
+      'ventas por CRM o WhatsApp',
+      'seguimiento y marketing'
     ],
     closingLead: 'Los numeros',
     closingAccent: 'hablan por si solos.'

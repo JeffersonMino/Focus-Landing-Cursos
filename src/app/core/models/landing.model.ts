@@ -140,7 +140,16 @@ export interface ResultsMetric {
   tone: ResultsMetricTone;
 }
 
-export type ResultsPillarIcon = 'content' | 'follow' | 'checklist' | 'target';
+export type ResultsPillarIcon =
+  | 'system'
+  | 'strategy'
+  | 'content'
+  | 'channels'
+  | 'crm'
+  | 'marketing'
+  | 'follow'
+  | 'checklist'
+  | 'target';
 
 export interface ResultsPillar {
   icon: ResultsPillarIcon;
@@ -164,6 +173,7 @@ export interface LandingConfig {
     name: string;
     slogan: string;
     logoText: string;
+    logoUrl: string;
   };
   sections: Record<SectionFlag, boolean>;
   seo: LandingSeo;
