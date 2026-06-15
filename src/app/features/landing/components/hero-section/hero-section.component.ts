@@ -30,7 +30,7 @@ export type HeroNavigationTarget =
         </brand-mark> -->
         <a class="group inline-flex min-w-0 items-center gap-3" href="./" aria-label="FocusComunicacion inicio">
           <!-- <span class="grid h-10 w-10 place-items-center rounded-[8px] bg-focus-orange text-lg font-black text-white">R</span> -->
-          <span class="flex h-15 w-15 shrink-0 items-center justify-center overflow-hidden rounded-[8px] ">            
+          <span class="flex h-15 w-15 shrink-0 items-center justify-center overflow-hidden rounded-[8px] sm:h-[10 rem] sm:w-[10 rem] ">            
             <img
               [src]="config.brand.logoUrl"
               alt="Focus Agencia"
@@ -38,11 +38,11 @@ export type HeroNavigationTarget =
               fetchpriority="high"
               decoding="async"
             >
-          </span>
-          <span class="min-w-0">
-            <span class="block max-w-[13rem] truncate text-xs font-black uppercase tracking-[0.18em] text-white sm:max-w-none sm:text-sm sm:tracking-[0.22em]">{{ config.brand.logoText }}</span>
+            </span>
+            <span class="min-w-0 flex-1 xl:flex-none">
+            <span class="block max-w-[13rem] whitespace-normal break-words text-xs font-black uppercase leading-4 tracking-[0.16em] text-white sm:max-w-[20rem] sm:text-sm sm:leading-5 md:max-w-[24rem] lg:max-w-[28rem] xl:max-w-none xl:whitespace-nowrap xl:tracking-[0.22em]">{{ config.brand.logoText }}</span>
             <span class="block text-[10px] uppercase tracking-[0.22em] text-white/42"></span>
-          </span>
+          </span>      
         </a>
 
         <!-- <desktop-navigation>
